@@ -1,0 +1,19 @@
+ {
+	"text": {
+		"text-intro": "Welcome to Laborless Laundry's Scheduler. I'm Ava, an Automated Virtual Assistant! %s",
+		"text-followup": "You got it! %s",
+  		"text-goodbye": "Alright! you're all set, %n. We'll pick up on %d around %t at %a. Thanks for choosing Laborless!",
+		"text-ignore": "Sorry, I'm all booked up right now. Please try again later!",
+		"text-error": "I'm sorry, I didn't catch that. %s"
+	},
+	"questions": {
+		"question-1": "Would you like DRY CLEANING or WASH AND FOLD?",
+		"question-2": "What day would you like us to pick up? (Please respond with a day of the week in all caps, like MONDAY)",
+		"question-3": "Which of these times would you like (please copy format exactly): ",
+		"question-4": "Where should we pick it up? (Please enter a full address, including zip code)",
+		"question-5": "Remind me of your first name?",
+		"question-6": "And your last name?",
+		"question-7": "Your phone number? (only numbers please!)",
+		"question-8": "And finally, your email address?"
+	}
+}
