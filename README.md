@@ -58,11 +58,12 @@ ngrok http 3000
 ```
 After a few seconds, this will start a server that forwards to your localhost, where the Scheduler Bot is running. You can see the address that is forwarding to the localhost, and be something like: https://e62c-104-222-31-106.ngrok.io. Now, we need to make the Twilio request be sent to that http address.
 
-To do this, we want to make a TwiML App. This can be done [here](https://console.twilio.com/us1/develop/phone-numbers/manage/twiml-apps?frameUrl=%2Fconsole%2Fphone-numbers%2Fruntime%2Ftwiml-apps%3Fx-target-region%3Dus1).
-    -Click the red button in the top left
-    -Name your TwiML App
-    -Put the URL you got from ngrok into the Messaging field with /sms at the end. Following our earlier example, this would be: https://e62c-104-222-31-106.ngrok.io/sms. This scheduler is not Voice compatible, so we don't need to put anything there. Make sure it also has HTTP Post.
-    -Save your app.
+To do this, we want to make a TwiML App. This can be done [here](https://console.twilio.com/us1/develop/phone-numbers/manage/twiml-apps?frameUrl=%2Fconsole%2Fphone-numbers%2Fruntime%2Ftwiml-apps%3Fx-target-region%3Dus1):
+- Click the red button in the top left
+- Name your TwiML App
+- Put the URL you got from ngrok into the Messaging field with /sms at the end. Following our earlier example, this would be: https://e62c-104-222-31-106.ngrok.io/sms. This scheduler is not Voice compatible, so we don't need to put anything there. 
+- Make sure it also has HTTP Post.
+- Save your app.
 
 Next, we want to configure the app with your phone number. For this, navigate to Active Numbers, then to the number you want to use. Scroll down to Messaging, select Configure with Other Handlers -> TwiML App, then select your TwiML App you just made below it.
 
